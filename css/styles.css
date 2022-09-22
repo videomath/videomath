@@ -1,0 +1,231 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "FatFrank";
+  src: url(/assets/fonts/FatFrank-Free.otf);
+}
+@font-face {
+  font-family: "General Sans";
+  src: url(/assets/fonts/GeneralSans-Regular.otf);
+}
+body {
+  font-family: "General Sans", sans-serif;
+}
+
+.hero {
+  padding: 30px 10px;
+  background: #181817;
+  display: grid;
+  text-align: center;
+}
+.hero__logo {
+  margin: 30px auto;
+}
+.hero__logo-img {
+  width: 200px;
+}
+.hero__logo span {
+  color: #f6f6ef;
+}
+.hero__logo-subtext {
+  color: #f6f6ef;
+  font-size: 0.75rem;
+  font-family: "General Sans", sans-serif;
+  text-transform: lowercase;
+  letter-spacing: 0;
+}
+.hero__logo-banner {
+  width: 350px;
+}
+.hero__heading {
+  padding: 40px 0;
+  color: #f6f6ef;
+  font-size: 2rem;
+  line-height: 1.1;
+  font-family: "FatFrank", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.hero__subtext {
+  font-family: "General Sans", sans-serif;
+  color: #f6f6ef;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 5px 0;
+}
+.hero__subtext span {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.works {
+  background: #FACB1D;
+  padding: 20px 10px;
+  color: #181817;
+  display: grid;
+  text-align: center;
+}
+.works__heading {
+  padding: 40px 0;
+  font-size: 2rem;
+  line-height: 1.1;
+  font-family: "FatFrank", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.works__subtext {
+  font-family: "General Sans", sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 5px 0;
+}
+.works__subtext span {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.works form {
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px;
+}
+.works input {
+  display: block;
+  margin: 10px auto;
+}
+.works__btn {
+  background: #181817;
+  border: none;
+  border-radius: 5px;
+  width: 130px;
+  height: 30px;
+  color: white;
+}
+
+.playlist {
+  padding: 50px 0;
+  display: grid;
+  place-items: center;
+  background: #181817;
+}
+.playlist__toptext {
+  padding: 40px 0;
+  color: #f6f6ef;
+  font-size: 2rem;
+  font-family: "FatFrank", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.footer {
+  padding: 30px 10px;
+  background: #181817;
+  display: grid;
+}
+.footer__grid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer__heading {
+  padding: 40px 0;
+  color: #f6f6ef;
+  font-size: 2rem;
+  line-height: 1.1;
+  font-family: "FatFrank", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.footer__connect {
+  padding: 20px 0;
+  color: #f6f6ef;
+  font-size: 0.85rem;
+}
+.footer__connect a {
+  color: #FACB1D;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+.footer__toptext {
+  font-family: "FatFrank", sans-serif;
+  color: #f6f6ef;
+  font-size: 1.25rem;
+  text-align: left;
+}
+.footer__logo-img {
+  padding-bottom: 20px;
+  width: 120px;
+  text-align: left;
+}
+.footer__copyright {
+  padding: 10px 0 10px 0;
+  color: #cfcfc8;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.footer__social-block {
+  display: flex;
+}
+.footer__social {
+  padding-right: 10px;
+}
+.footer__social a {
+  color: #FACB1D;
+}
+.footer__social a:hover {
+  color: #f6f6ef;
+}
+.footer__policy {
+  font-weight: 500;
+  color: #FACB1D;
+  font-size: 0.7rem;
+}
+.footer__policy ul {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.footer__policy ul li {
+  padding-right: 5px;
+  list-style: none;
+}
+
+.popup-wrapper {
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.popup {
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 10% auto;
+  padding: 20px;
+  background: #f6f6ef;
+  position: relative;
+}
+
+.popup a {
+  background: black;
+  color: #f6f6ef;
+  text-decoration: none;
+  padding: 6px 10px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */
