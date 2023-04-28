@@ -1,0 +1,155 @@
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  flex-wrap: wrap;
+}
+
+.logo {
+font-size: .9rem;
+// color: var(--body-color);
+font-family: 'Montserrat', sans-serif;
+font-weight: 800;
+color: var(--logo-color);
+
+}
+
+.hamburger {
+  width: 56px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  padding-top: 6px;
+  
+}
+
+.bar {
+  height: 3px;
+  background: var(--body-color);
+  transition: all 0.4s ease;
+  border-radius: 25px;
+  margin-bottom: 6px;
+  transform-origin: left center;
+  width: 30px;
+  background: var(--body-color);
+  
+}
+
+.bar-1 {
+  width: 38px;
+}
+
+.hamburger:hover > .bar-1 {
+  width: 36px;
+}
+
+.bar-2 {
+  width: 30px;
+}
+
+.hamburger:hover > .bar-2 {
+  width: 36px;
+}
+
+.bar-3 {
+  width: 38px;
+}
+
+.hamburger:hover > .bar-3 {
+  width: 36px;
+}
+
+.bar-4 {
+  width: 36px;
+}
+
+.hamburger:hover > .bar-4 {
+  width: 36px;
+}
+
+.show .hamburger { 
+  & > .bar-1 {
+    transform: none;
+    transform: rotate(45deg);
+    width: 38px;
+  }
+
+  & > .bar-2 {
+    opacity: 0;
+  }
+
+  & > .bar-3 {
+    transform: none;
+    transform: rotate(-45deg) translate(-6px, 5px);
+    width: 38px;
+  }
+
+  & > .bar-4 {
+    opacity: 0;
+  }
+
+  .bar {
+    background: #f7ce68;
+  }
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  // right: 0;
+  // bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  margin: auto;
+  backdrop-filter: blur(3px);
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+  border-radius: 10px;
+  overflow: hidden;
+  
+
+  .show & {
+    display: block;
+    opacity: 1;
+    pointer-events: visible;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    left: 15%;
+    font-size: 1.8rem;
+  }
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  line-height: 5rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: #f7ce68;
+    text-decoration: none;
+  }
+}
+
+nav .active-page a {
+  font-weight: bold;
+  color: white;
+}
+
+.show nav {
+  display: block;
+}

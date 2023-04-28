@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --root-font: #171717;
+  // --about-back: #FDED5B;
+  --hero-banner: white;
+  --font-color: #B8B8B9;
+  --font-dark: #424242;
+  --btn-text: #171717;
+  --btn-main: #96d05c;
+  --btn-hover: #B8B8B9;
+  --design-text: white;
+  --navbar-color: #ffffff;
+  --backgr-color: #1d1f1d;
+  --background: #101011;
+  --footer-text: #86868b;
+  --footer-border: #424245;
+  --logo-color: #ff00ff;
+  
+}
+
+.container {
+  padding: 0 1em;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+body {
+  position: relative;
+  color: var(--font-color);
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.5em;
+  // background-color: var(--background);
+  // overflow: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+a{text-decoration: none; color: #101011;}
+a:hover{color: var(--logo-color);}
+
+// IPAD & Above Screens
+@media screen and (min-width:800px) {
+  .container {
+    padding: 0 8%;
+   max-width: 107rem;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
